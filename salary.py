@@ -7,13 +7,9 @@ inss = int
 fgts = int
 sliquid = int
 
-hovertime == 100
+hovertime = 100
 
-def new_func(htworked, hextra, vhour, hovertime):
-    sbruto = htworked + hextra * (1 + (hovertime / 100)) * vhour
-    return sbruto
-
-sbruto = new_func(htworked, hextra, vhour, hovertime)
+sbruto = htworked + hextra * (1 + (hovertime / 100)) * vhour
 inss = sbruto * 9/100
 fgts = sbruto * 8/100
 sliquid = sbruto - inss
